@@ -84,12 +84,3 @@ class Py1337x:
             },
         )
         return self._parse_movie_table(BS(data, "html.parser"))
-
-
-if __name__ == "__main__":
-    torrent = Py1337x("ww2.1337x.buzz")
-    # movies = torrent.get_movie_list(category=TorrentCategory("movies"), page=20)
-    # print(movies)
-    movies = torrent.search("black widow")
-    print(movies)
-    print(torrent.get_movie_magnet(movies[0]))

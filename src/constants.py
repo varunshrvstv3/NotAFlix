@@ -1,9 +1,10 @@
 import enum
-from typing import Set
 
 
 class TorrentCategory(enum.Enum):
-    XXX = "xxx"
+    """
+    Categories of the movies supported by the torrent.
+    """
     MOVIES = "movies"
     TV = "tv"
     GAMES = "games"
